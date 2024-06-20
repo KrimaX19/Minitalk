@@ -6,7 +6,7 @@
 /*   By: rusoares <rusoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:02:22 by rusoares          #+#    #+#             */
-/*   Updated: 2024/06/19 19:48:58 by rusoares         ###   ########.fr       */
+/*   Updated: 2024/06/20 18:20:41 by rusoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,4 +61,13 @@ tenho de criar o que fazer com o sinal que combinar.
 do lado do envio (cliente) envio o sinal 1 e do lado da rececao (server)
 recebo esse signal (1 neste exemplo) e faco o que quiser com ele
 
+*/
+
+/*
+Feita a comunicacao entre os 2 processos atraves do pid
+tenho de fazer uma mensagem que inclua o pid do processo que envia
+a mensagem para conseguir enviar de volta o recibo da mensagem
+a mensagem tem de incluir o pid do processo de forma simples
+
+saber quanto ocupa um int para decifraa a mensagem de forma simples
 */
