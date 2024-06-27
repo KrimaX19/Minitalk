@@ -6,7 +6,7 @@
 /*   By: rusoares <rusoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 19:06:08 by rusoares          #+#    #+#             */
-/*   Updated: 2024/06/27 22:21:20 by rusoares         ###   ########.fr       */
+/*   Updated: 2024/06/27 22:38:39 by rusoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,17 @@
 #include <signal.h>
 void	send_message(int pid, const char *message)
 {
-	
+	int	client;
+	int	i;
+	char byte;
+
+	client = getpid();
+	i = sizeof(int) - 1;
+	client >> (i * 8) & 
+	while (i >= 0)
+	{
+		
+	}
 }
 
 void	signal_handler(int signal)
