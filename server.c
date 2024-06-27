@@ -6,7 +6,7 @@
 /*   By: rusoares <rusoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:02:22 by rusoares          #+#    #+#             */
-/*   Updated: 2024/06/20 18:20:41 by rusoares         ###   ########.fr       */
+/*   Updated: 2024/06/26 22:25:35 by rusoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,14 @@ tenho de fazer uma mensagem que inclua o pid do processo que envia
 a mensagem para conseguir enviar de volta o recibo da mensagem
 a mensagem tem de incluir o pid do processo de forma simples
 
-saber quanto ocupa um int para decifraa a mensagem de forma simples
+saber quanto ocupa um int para decifrar a mensagem de forma simples
+
+
+para transformar um caracter em binario uso um loop como este
+
+string length
+int i = 0;
+while (i < mensagem)
+
+
 */

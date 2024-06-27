@@ -6,7 +6,7 @@
 /*   By: rusoares <rusoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 18:24:46 by rusoares          #+#    #+#             */
-/*   Updated: 2024/06/25 22:07:32 by rusoares         ###   ########.fr       */
+/*   Updated: 2024/06/26 19:08:10 by rusoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	message(unsigned int pid_server, unsigned char msg)
 				kill(pid_server, SIGUSR1);
 			else
 				kill(pid_server, SIGUSR2);
-			usleep (300);
+			usleep (50);
 		}
 	}
 }
@@ -59,9 +59,10 @@ int	main(int argc, char* argv[])
 	// msg = 0;
 	// printf("PID: %d\n", pid);
 	// sleep(10);
-	while (str[i])
+	while (argv[2][i])
 	{
-		message(pidserver, str[i++]);
+		message(pidserver, argv[2][i]);
+		i++;
 	}
 	message(pidserver, '\0');
 	// if (msg == 1)
